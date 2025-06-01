@@ -1,0 +1,32 @@
+body {
+    background-color: #fce4e4;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.error-container {
+    padding-top: 50px;
+}
+
+.error-image {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.particle {
+    position: fixed;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: #f44336;
+    opacity: 0.6;
+    border-radius: 50%;
+    animation: fall linear infinite;
+    z-index: 0;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}

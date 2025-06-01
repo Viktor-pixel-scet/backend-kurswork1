@@ -1,0 +1,17 @@
+{
+    "name": "admin/backend-kurswork",
+    "autoload": {
+        "psr-4": {
+            "Admin\\BackendKurswork\\": "backend/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Малівський Віктор Андрійович",
+            "email": "ipz235_mva@student.ztu.edu.ua"
+        }
+    ],
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "^2.9"
+    }
+}

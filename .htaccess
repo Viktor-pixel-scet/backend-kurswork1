@@ -1,0 +1,14 @@
+# Включаємо модуль перезапису
+RewriteEngine On
+
+# Базовий шлях для проекту
+RewriteBase /backend-kurswork/
+
+# Налаштування обробки помилок
+ErrorDocument 404 /backend-kurswork/public/views/errors/404.php
+ErrorDocument 500 /backend-kurswork/public/views/errors/500.php
+
+# Правила перенаправлення для неіснуючих файлів/директорій
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/views/errors/404.php [L,QSA]
